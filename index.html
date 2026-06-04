@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="1-GZnCORyBXjVhkeZO9EsWyJtfoFIgsFXJHOcD4zjoc" />
+  <title>Awesome AI Tools - Curated Directory of Best AI Tools</title>
+  <meta name="description" content="Discover the best AI tools for coding, writing, design, video, audio, productivity, and more. A curated directory with search and filtering.">
+  <script>
+    const link = document.createElement('link');
+    link.rel = 'canonical';
+    link.href = location.origin + location.pathname;
+    document.head.appendChild(link);
+  </script>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --tag-bg: #1f2937;
+      --free: #3fb950;
+      --freemium: #d29922;
+      --paid: #f85149;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .controls {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    #search {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.5rem 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    #search:focus { border-color: var(--accent); }
+    #search::placeholder { color: var(--text-muted); }
+
+    select {
+      padding: 0.5rem 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 0.9rem;
+      cursor: pointer;
+      outline: none;
+    }
+
+    select:focus { border-color: var(--accent); }
+
+    .stats {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .category-section h2 {
+      font-size: 1.2rem;
+      margin: 1.5rem 0 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tool-list { list-style: none; }
+
+    .tool-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .tool-item + .tool-item {
+      border-top: 1px solid var(--border);
+    }
+
+    .tool-heading {
+      font-size: 0.95rem;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .tool-name {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .tool-name:hover { color: var(--accent-hover); }
+
+    .tool-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .badge-free { background: var(--free); color: #000; }
+    .badge-freemium { background: var(--freemium); color: #000; }
+    .badge-paid { background: var(--paid); color: #fff; }
+
+    .hidden { display: none; }
+
+    .no-results {
+      text-align: center;
+      color: var(--text-muted);
+      padding: 3rem 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Awesome AI Tools</h1>
+      <p>A curated list of AI tools across categories</p>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search tools..." autocomplete="off">
+      <select id="category-filter">
+        <option value="">All Categories</option>
+      </select>
+      <select id="pricing-filter">
+        <option value="">All Pricing</option>
+        <option value="Free">Free</option>
+        <option value="Freemium">Freemium</option>
+        <option value="Paid">Paid</option>
+      </select>
+    </div>
+
+    <div class="stats" id="stats"></div>
+    <div id="content"></div>
+    <div class="no-results hidden" id="no-results">No tools found matching your filters.</div>
+
+    <footer id="footer"></footer>
+    <script>
+      const m = location.hostname.match(/^(.+)\.github\.io$/);
+      if (m) {
+        const repo = location.pathname.split('/').filter(Boolean)[0] || '';
+        const a = document.createElement('a');
+        a.href = 'https://github.com/' + m[1] + (repo ? '/' + repo : '');
+        a.textContent = 'GitHub';
+        document.getElementById('footer').appendChild(a);
+      }
+    </script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+  <script>
+    function createToolItem(tool) {
+      const li = document.createElement('li');
+      li.className = 'tool-item';
+      li.dataset.category = tool.category;
+      li.dataset.pricing = tool.pricing;
+      li.dataset.search = [tool.name, tool.description, ...(tool.tags || [])].join(' ').toLowerCase();
+
+      const h3 = document.createElement('h3');
+      h3.className = 'tool-heading';
+
+      const a = document.createElement('a');
+      a.className = 'tool-name';
+      a.href = tool.url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = tool.name;
+      h3.appendChild(a);
+
+      const desc = document.createElement('span');
+      desc.className = 'tool-desc';
+      desc.textContent = '— ' + tool.description;
+
+      const badge = document.createElement('span');
+      const pricingClass = 'badge-' + tool.pricing.toLowerCase().replace(/\s+/g, '-');
+      badge.className = 'badge ' + pricingClass;
+      badge.textContent = tool.pricing;
+
+      li.appendChild(h3);
+      li.appendChild(desc);
+      li.appendChild(badge);
+      return li;
+    }
+
+    (async () => {
+      const res = await fetch('tools.yaml');
+      const text = await res.text();
+      const data = jsyaml.load(text);
+
+      const categoryFilter = document.getElementById('category-filter');
+      data.categories.forEach(cat => {
+        const opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat;
+        categoryFilter.appendChild(opt);
+      });
+
+      const content = document.getElementById('content');
+      const grouped = {};
+      data.categories.forEach(cat => { grouped[cat] = []; });
+      data.tools.forEach(tool => {
+        if (grouped[tool.category]) grouped[tool.category].push(tool);
+      });
+
+      data.categories.forEach(cat => {
+        const tools = grouped[cat];
+        if (!tools.length) return;
+
+        const section = document.createElement('div');
+        section.className = 'category-section';
+        section.dataset.category = cat;
+
+        const h2 = document.createElement('h2');
+        h2.textContent = cat;
+        section.appendChild(h2);
+
+        const ul = document.createElement('ul');
+        ul.className = 'tool-list';
+        tools.forEach(tool => ul.appendChild(createToolItem(tool)));
+
+        section.appendChild(ul);
+        content.appendChild(section);
+      });
+
+      updateStats();
+
+      const search = document.getElementById('search');
+      const pricing = document.getElementById('pricing-filter');
+
+      search.addEventListener('input', applyFilters);
+      categoryFilter.addEventListener('change', applyFilters);
+      pricing.addEventListener('change', applyFilters);
+
+      function applyFilters() {
+        const q = search.value.toLowerCase().trim();
+        const catVal = categoryFilter.value;
+        const priceVal = pricing.value;
+        let visibleCount = 0;
+
+        document.querySelectorAll('.tool-item').forEach(item => {
+          const matchSearch = !q || item.dataset.search.includes(q);
+          const matchCat = !catVal || item.dataset.category === catVal;
+          const matchPrice = !priceVal || item.dataset.pricing === priceVal;
+          const visible = matchSearch && matchCat && matchPrice;
+          item.classList.toggle('hidden', !visible);
+          if (visible) visibleCount++;
+        });
+
+        document.querySelectorAll('.category-section').forEach(section => {
+          const hasVisible = section.querySelector('.tool-item:not(.hidden)');
+          section.classList.toggle('hidden', !hasVisible);
+        });
+
+        document.getElementById('no-results').classList.toggle('hidden', visibleCount > 0);
+        updateStats(visibleCount);
+      }
+
+      function updateStats(shown) {
+        const total = data.tools.length;
+        const cats = data.categories.length;
+        const display = shown !== undefined ? shown : total;
+        document.getElementById('stats').textContent =
+          display === total
+            ? total + ' tools across ' + cats + ' categories'
+            : 'Showing ' + display + ' of ' + total + ' tools';
+      }
+    })();
+  </script>
+</body>
+</html>

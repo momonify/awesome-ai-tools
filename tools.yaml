@@ -1,0 +1,315 @@
+# Awesome AI Tools - Single Source of Truth
+# Edit this file to add/remove tools. README.md is auto-generated.
+
+categories:
+  - Writing & Content
+  - Coding & Development
+  - Design & Image
+  - Video & Animation
+  - Audio & Voice
+  - Chatbots & Assistants
+  - Search & Research
+  - Productivity & Workspace
+  - Marketing & Sales
+  - Data & Analytics
+  - Automation & Agents
+  - Education & Learning
+  - Security & Privacy
+  - Developer Tools & Platforms
+  - Fun & Entertainment
+
+tools:
+  # --- Writing & Content ---
+  - name: Grammarly
+    url: https://www.grammarly.com
+    category: Writing & Content
+    description: AI writing assistant for grammar, clarity, and tone improvements.
+    pricing: Freemium
+    tags: [grammar, editing, writing]
+
+  - name: AI Humanizer
+    url: https://ai-humanizer.space/
+    category: Writing & Content
+    description: Rewrite AI-generated text into natural, human-sounding content for blogs, emails, social posts, and everyday writing. Simple, fast, and reliable.
+    pricing: Paid
+    tags: [humanizer, rewriting]
+
+  # --- Coding & Development ---
+  - name: GitHub Copilot
+    url: https://github.com/features/copilot
+    category: Coding & Development
+    description: AI pair programmer that suggests code completions in your editor.
+    pricing: Paid
+    tags: [coding, autocomplete, ide]
+
+  - name: Cursor
+    url: https://www.cursor.com
+    category: Coding & Development
+    description: AI-powered code editor built on VS Code with deep codebase understanding.
+    pricing: Freemium
+    tags: [coding, editor, ide]
+
+  - name: Claude Code
+    url: https://docs.anthropic.com/en/docs/claude-code
+    category: Coding & Development
+    description: Anthropic's agentic coding tool that operates in the terminal.
+    pricing: Paid
+    tags: [coding, cli, agent]
+
+  - name: Codex
+    url: https://openai.com/index/introducing-codex/
+    category: Coding & Development
+    description: OpenAI's cloud-based coding agent that runs tasks in parallel sandboxed environments.
+    pricing: Paid
+    tags: [coding, agent, cloud]
+
+  # # --- Design & Image ---
+  # - name: Midjourney
+  #   url: https://www.midjourney.com
+  #   category: Design & Image
+  #   description: AI image generation tool known for artistic and high-quality outputs.
+  #   pricing: Paid
+  #   tags: [image-generation, art]
+
+  # - name: DALL-E
+  #   url: https://openai.com/dall-e
+  #   category: Design & Image
+  #   description: OpenAI's image generation model accessible via ChatGPT and API.
+  #   pricing: Freemium
+  #   tags: [image-generation, api]
+
+  # - name: Canva Magic Studio
+  #   url: https://www.canva.com/magic
+  #   category: Design & Image
+  #   description: AI-powered design features integrated into Canva's design platform.
+  #   pricing: Freemium
+  #   tags: [design, editing, templates]
+
+  # # --- Video & Animation ---
+  # - name: Runway
+  #   url: https://runwayml.com
+  #   category: Video & Animation
+  #   description: AI video generation and editing platform for creative professionals.
+  #   pricing: Freemium
+  #   tags: [video-generation, editing]
+
+  # - name: Synthesia
+  #   url: https://www.synthesia.io
+  #   category: Video & Animation
+  #   description: AI video creation with realistic avatars and text-to-video capabilities.
+  #   pricing: Paid
+  #   tags: [video-generation, avatars]
+
+  # - name: HeyGen
+  #   url: https://www.heygen.com
+  #   category: Video & Animation
+  #   description: AI video platform for creating professional videos with AI avatars.
+  #   pricing: Freemium
+  #   tags: [video-generation, avatars, marketing]
+
+  # # --- Audio & Voice ---
+  # - name: ElevenLabs
+  #   url: https://elevenlabs.io
+  #   category: Audio & Voice
+  #   description: AI voice synthesis and cloning with realistic text-to-speech.
+  #   pricing: Freemium
+  #   tags: [tts, voice-cloning, audio]
+
+  # - name: Murf
+  #   url: https://murf.ai
+  #   category: Audio & Voice
+  #   description: AI voice generator for voiceovers, presentations, and videos.
+  #   pricing: Freemium
+  #   tags: [tts, voiceover]
+
+  # - name: Suno
+  #   url: https://suno.com
+  #   category: Audio & Voice
+  #   description: AI music generation platform that creates songs from text prompts.
+  #   pricing: Freemium
+  #   tags: [music, generation]
+
+  # # --- Chatbots & Assistants ---
+  # - name: ChatGPT
+  #   url: https://chat.openai.com
+  #   category: Chatbots & Assistants
+  #   description: OpenAI's conversational AI assistant powered by GPT models.
+  #   pricing: Freemium
+  #   tags: [chatbot, general-purpose]
+
+  # - name: Claude
+  #   url: https://claude.ai
+  #   category: Chatbots & Assistants
+  #   description: Anthropic's AI assistant known for safety, helpfulness, and long context.
+  #   pricing: Freemium
+  #   tags: [chatbot, general-purpose]
+
+  # - name: Gemini
+  #   url: https://gemini.google.com
+  #   category: Chatbots & Assistants
+  #   description: Google's AI assistant with multimodal capabilities and Google integration.
+  #   pricing: Freemium
+  #   tags: [chatbot, multimodal, google]
+
+  # # --- Search & Research ---
+  # - name: Perplexity
+  #   url: https://www.perplexity.ai
+  #   category: Search & Research
+  #   description: AI-powered search engine that provides cited, conversational answers.
+  #   pricing: Freemium
+  #   tags: [search, research, citations]
+
+  # - name: Consensus
+  #   url: https://consensus.app
+  #   category: Search & Research
+  #   description: AI search engine for scientific research papers with evidence-based answers.
+  #   pricing: Freemium
+  #   tags: [research, academic, papers]
+
+  # - name: Elicit
+  #   url: https://elicit.com
+  #   category: Search & Research
+  #   description: AI research assistant that helps find, summarize, and analyze academic papers.
+  #   pricing: Freemium
+  #   tags: [research, academic, analysis]
+
+  # # --- Productivity & Workspace ---
+  # - name: Notion AI
+  #   url: https://www.notion.so/product/ai
+  #   category: Productivity & Workspace
+  #   description: AI features integrated into Notion for writing, summarization, and task management.
+  #   pricing: Paid
+  #   tags: [notes, writing, productivity]
+
+  # - name: Otter.ai
+  #   url: https://otter.ai
+  #   category: Productivity & Workspace
+  #   description: AI meeting transcription and note-taking assistant.
+  #   pricing: Freemium
+  #   tags: [transcription, meetings, notes]
+
+  # - name: Gamma
+  #   url: https://gamma.app
+  #   category: Productivity & Workspace
+  #   description: AI-powered presentation and document creation tool.
+  #   pricing: Freemium
+  #   tags: [presentations, documents]
+
+  # # --- Marketing & Sales ---
+  # - name: Surfer SEO
+  #   url: https://surferseo.com
+  #   category: Marketing & Sales
+  #   description: AI-powered SEO tool for content optimization and keyword research.
+  #   pricing: Paid
+  #   tags: [seo, content, optimization]
+
+  # - name: Apollo.io
+  #   url: https://www.apollo.io
+  #   category: Marketing & Sales
+  #   description: AI-powered sales intelligence and engagement platform.
+  #   pricing: Freemium
+  #   tags: [sales, leads, crm]
+
+  # # --- Data & Analytics ---
+  # - name: Julius
+  #   url: https://julius.ai
+  #   category: Data & Analytics
+  #   description: AI data analyst that helps analyze data and create visualizations from files.
+  #   pricing: Freemium
+  #   tags: [data-analysis, visualization]
+
+  # - name: Akkio
+  #   url: https://www.akkio.com
+  #   category: Data & Analytics
+  #   description: No-code AI platform for predictive analytics and data analysis.
+  #   pricing: Paid
+  #   tags: [predictive, no-code, analytics]
+
+  # # --- Automation & Agents ---
+  # - name: Zapier AI
+  #   url: https://zapier.com/ai
+  #   category: Automation & Agents
+  #   description: AI-enhanced workflow automation connecting thousands of apps.
+  #   pricing: Freemium
+  #   tags: [automation, workflows, integrations]
+
+  # - name: Relevance AI
+  #   url: https://relevanceai.com
+  #   category: Automation & Agents
+  #   description: Platform for building and deploying AI agents and workflows.
+  #   pricing: Freemium
+  #   tags: [agents, workflows, no-code]
+
+  # # --- Education & Learning ---
+  # - name: Khanmigo
+  #   url: https://www.khanacademy.org/khan-labs
+  #   category: Education & Learning
+  #   description: Khan Academy's AI tutor powered by GPT for personalized learning.
+  #   pricing: Free
+  #   tags: [tutoring, learning, k12]
+
+  # - name: Duolingo Max
+  #   url: https://www.duolingo.com
+  #   category: Education & Learning
+  #   description: AI-powered language learning with roleplay and explanations.
+  #   pricing: Paid
+  #   tags: [language, learning]
+
+  # # --- Security & Privacy ---
+  # - name: Darktrace
+  #   url: https://darktrace.com
+  #   category: Security & Privacy
+  #   description: AI-powered cybersecurity platform for threat detection and response.
+  #   pricing: Paid
+  #   tags: [cybersecurity, threat-detection]
+
+  # - name: Snyk
+  #   url: https://snyk.io
+  #   category: Security & Privacy
+  #   description: AI-assisted developer security platform for finding and fixing vulnerabilities.
+  #   pricing: Freemium
+  #   tags: [devsec, vulnerabilities, scanning]
+
+  # # --- Developer Tools & Platforms ---
+  # - name: OpenAI API
+  #   url: https://platform.openai.com
+  #   category: Developer Tools & Platforms
+  #   description: API access to GPT, DALL-E, Whisper and other OpenAI models.
+  #   pricing: Paid
+  #   tags: [api, llm, models]
+
+  # - name: Anthropic API
+  #   url: https://docs.anthropic.com
+  #   category: Developer Tools & Platforms
+  #   description: API access to Claude models with long context and tool use.
+  #   pricing: Paid
+  #   tags: [api, llm, models]
+
+  # - name: Hugging Face
+  #   url: https://huggingface.co
+  #   category: Developer Tools & Platforms
+  #   description: Open-source ML platform with model hub, datasets, and inference APIs.
+  #   pricing: Freemium
+  #   tags: [models, open-source, hub]
+
+  # - name: LangChain
+  #   url: https://www.langchain.com
+  #   category: Developer Tools & Platforms
+  #   description: Framework for building applications with LLMs, chains, and agents.
+  #   pricing: Free
+  #   tags: [framework, agents, open-source]
+
+  # # --- Fun & Entertainment ---
+  # - name: Character.ai
+  #   url: https://character.ai
+  #   category: Fun & Entertainment
+  #   description: Platform for creating and chatting with AI characters and personas.
+  #   pricing: Freemium
+  #   tags: [characters, roleplay, chat]
+
+  # - name: Luma Dream Machine
+  #   url: https://lumalabs.ai/dream-machine
+  #   category: Fun & Entertainment
+  #   description: AI video generation model for creating short video clips from text or images.
+  #   pricing: Freemium
+  #   tags: [video-generation, creative]
