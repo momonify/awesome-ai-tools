@@ -21,7 +21,7 @@
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [Grammarly](https://www.grammarly.com) | AI writing assistant for grammar, clarity, and tone improvements. | 🟡 Freemium |
-| [AI Humanizer](https://ai-humanizer.space) | Rewrite AI-generated text into natural, human-sounding content for blogs, emails, social posts, and everyday writing. Simple, fast, and reliable. | 🔴 Paid |
+| [AI Humanizer](https://ai-humanizer.space/) | Rewrite AI-generated text into natural, human-sounding content for blogs, emails, social posts, and everyday writing. Simple, fast, and reliable. | 🔴 Paid |
 
 ## Coding & Development
 
