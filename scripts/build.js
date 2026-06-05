@@ -12,7 +12,7 @@ data.tools.forEach(tool => {
   if (grouped[tool.category]) grouped[tool.category].push(tool);
 });
 
-const pricingIcon = { Free: '🟢', Freemium: '🟡', Paid: '🔴' };
+const pricingIcon = { 'Open Source': '🟢', Free: '🔵', Freemium: '🟡', Paid: '🔴' };
 
 const lines = [
   '# Awesome AI Tools',
@@ -22,7 +22,7 @@ const lines = [
   `![Tools](https://img.shields.io/badge/tools-${data.tools.length}-blue)`,
   `![Categories](https://img.shields.io/badge/categories-${data.categories.length}-green)`,
   '',
-  '🟢 Free · 🟡 Freemium · 🔴 Paid',
+  '🟢 Open Source · 🔵 Free · 🟡 Freemium · 🔴 Paid',
   '',
   '---',
   '',

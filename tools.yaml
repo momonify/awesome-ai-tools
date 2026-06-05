@@ -63,6 +63,13 @@ tools:
     pricing: Paid
     tags: [coding, agent, cloud]
 
+  - name: Cline
+    url: https://github.com/cline/cline
+    category: Coding & Development
+    description: Autonomous coding agent for VS Code that can read/write files, execute terminal commands, and browse the web to complete tasks end-to-end.
+    pricing: Open Source
+    tags: [coding, vscode, agent, open-source, autonomous]
+
   # # --- Design & Image ---
   # - name: Midjourney
   #   url: https://www.midjourney.com
@@ -225,20 +232,50 @@ tools:
   #   pricing: Paid
   #   tags: [predictive, no-code, analytics]
 
-  # # --- Automation & Agents ---
-  # - name: Zapier AI
-  #   url: https://zapier.com/ai
-  #   category: Automation & Agents
-  #   description: AI-enhanced workflow automation connecting thousands of apps.
-  #   pricing: Freemium
-  #   tags: [automation, workflows, integrations]
+  # --- Automation & Agents ---
+  # Persistent / Autonomous Agents
+  - name: Hermes Agent
+    url: https://github.com/nousresearch/hermes-agent
+    category: Automation & Agents
+    description: Self-improving autonomous agent by Nous Research with persistent memory, skills, tool use, and messaging gateway. Designed for server/VPS deployment.
+    pricing: Open Source
+    tags: [agent, open-source, autonomous, self-hosted, memory]
 
-  # - name: Relevance AI
-  #   url: https://relevanceai.com
-  #   category: Automation & Agents
-  #   description: Platform for building and deploying AI agents and workflows.
-  #   pricing: Freemium
-  #   tags: [agents, workflows, no-code]
+  - name: OpenClaw
+    url: https://openclaw.ai
+    category: Automation & Agents
+    description: Self-hosted personal AI agent that executes real actions — email, web browsing, scripts, file management — with skills, memory, and messaging gateway.
+    pricing: Open Source
+    tags: [agent, open-source, self-hosted, personal, skills]
+
+  - name: OpenHands
+    url: https://github.com/All-Hands-AI/OpenHands
+    category: Automation & Agents
+    description: Autonomous software development agent platform that can execute real engineering tasks — not just code suggestions, but full project-level work.
+    pricing: Open Source
+    tags: [agent, open-source, coding, autonomous, software-engineering]
+
+  - name: Open Interpreter
+    url: https://github.com/OpenInterpreter/open-interpreter
+    category: Automation & Agents
+    description: Local computer-use agent that lets LLMs execute code, run shell commands, and perform system tasks directly on your machine.
+    pricing: Open Source
+    tags: [agent, open-source, local, computer-use, terminal]
+
+  # Browser Agents
+  - name: Browser Use
+    url: https://github.com/browser-use/browser-use
+    category: Automation & Agents
+    description: Open-source browser automation agent that enables AI to navigate and interact with websites autonomously.
+    pricing: Open Source
+    tags: [agent, open-source, browser, automation, web]
+
+  - name: Stagehand
+    url: https://github.com/browserbase/stagehand
+    category: Automation & Agents
+    description: Browser automation framework by Browserbase for building reliable agentic web tasks with structured browser control.
+    pricing: Open Source
+    tags: [agent, open-source, browser, automation, framework]
 
   # # --- Education & Learning ---
   # - name: Khanmigo
@@ -270,34 +307,21 @@ tools:
   #   pricing: Freemium
   #   tags: [devsec, vulnerabilities, scanning]
 
-  # # --- Developer Tools & Platforms ---
-  # - name: OpenAI API
-  #   url: https://platform.openai.com
-  #   category: Developer Tools & Platforms
-  #   description: API access to GPT, DALL-E, Whisper and other OpenAI models.
-  #   pricing: Paid
-  #   tags: [api, llm, models]
+  # --- Developer Tools & Platforms ---
+  # Agent Memory & Infrastructure
+  - name: Mem0
+    url: https://github.com/mem0ai/mem0
+    category: Developer Tools & Platforms
+    description: Memory layer for AI agents and apps. Provides persistent, structured memory that agents can read and write across sessions.
+    pricing: Open Source
+    tags: [memory, agents, open-source, infrastructure]
 
-  # - name: Anthropic API
-  #   url: https://docs.anthropic.com
-  #   category: Developer Tools & Platforms
-  #   description: API access to Claude models with long context and tool use.
-  #   pricing: Paid
-  #   tags: [api, llm, models]
-
-  # - name: Hugging Face
-  #   url: https://huggingface.co
-  #   category: Developer Tools & Platforms
-  #   description: Open-source ML platform with model hub, datasets, and inference APIs.
-  #   pricing: Freemium
-  #   tags: [models, open-source, hub]
-
-  # - name: LangChain
-  #   url: https://www.langchain.com
-  #   category: Developer Tools & Platforms
-  #   description: Framework for building applications with LLMs, chains, and agents.
-  #   pricing: Free
-  #   tags: [framework, agents, open-source]
+  - name: Playwright MCP
+    url: https://github.com/microsoft/playwright-mcp
+    category: Developer Tools & Platforms
+    description: MCP server by Microsoft that gives AI agents browser automation capabilities through Playwright. Key building block for web-capable agents.
+    pricing: Open Source
+    tags: [mcp, browser, agents, open-source, microsoft]
 
   # # --- Fun & Entertainment ---
   # - name: Character.ai
