@@ -277,6 +277,13 @@ tools:
     pricing: Open Source
     tags: [agent, open-source, browser, automation, framework]
 
+  - name: Agent QA
+    url: https://github.com/vostride/agent-qa
+    category: Automation & Agents
+    description: FSL source-available application QA harness for natural-language web and mobile tests; free to install, while configured model, browser, or device providers may charge separately.
+    pricing: Free
+    tags: [testing, qa, browser, mobile, source-available]
+
   # # --- Education & Learning ---
   # - name: Khanmigo
   #   url: https://www.khanacademy.org/khan-labs
