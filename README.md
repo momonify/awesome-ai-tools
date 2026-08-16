@@ -2,7 +2,7 @@
 
 > A curated list of AI tools across categories.
 
-![Tools](https://img.shields.io/badge/tools-15-blue)
+![Tools](https://img.shields.io/badge/tools-16-blue)
 ![Categories](https://img.shields.io/badge/categories-15-green)
 
 🟢 Open Source · 🔵 Free · 🟡 Freemium · 🔴 Paid
@@ -45,6 +45,7 @@
 | [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) | Local computer-use agent that lets LLMs execute code, run shell commands, and perform system tasks directly on your machine. | 🟢 Open Source |
 | [Browser Use](https://github.com/browser-use/browser-use) | Open-source browser automation agent that enables AI to navigate and interact with websites autonomously. | 🟢 Open Source |
 | [Stagehand](https://github.com/browserbase/stagehand) | Browser automation framework by Browserbase for building reliable agentic web tasks with structured browser control. | 🟢 Open Source |
+| [Agent QA](https://github.com/vostride/agent-qa) | FSL source-available application QA harness for natural-language web and mobile tests; free to install, while configured model, browser, or device providers may charge separately. | 🔵 Free |
 
 ## Developer Tools & Platforms
 
